@@ -344,6 +344,9 @@
   .h-auto {
     height: auto;
   }
+  .h-fit {
+    height: fit-content;
+  }
   .h-full {
     height: 100%;
   }
@@ -434,6 +437,9 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
   .cursor-pointer {
     cursor: pointer;
   }
@@ -448,6 +454,9 @@
   }
   .flex-col {
     flex-direction: column;
+  }
+  .items-baseline {
+    align-items: baseline;
   }
   .items-center {
     align-items: center;
@@ -545,6 +554,12 @@
   .gap-y-20 {
     row-gap: calc(var(--spacing) * 20);
   }
+  .gap-y-\[2px\] {
+    row-gap: 2px;
+  }
+  .gap-y-\[5px\] {
+    row-gap: 5px;
+  }
   .gap-y-\[10px\] {
     row-gap: 10px;
   }
@@ -556,6 +571,9 @@
   }
   .gap-y-\[25px\] {
     row-gap: 25px;
+  }
+  .gap-y-\[30px\] {
+    row-gap: 30px;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -766,6 +784,15 @@
   }
   .bg-\[-\[\#0A84FF\]\] {
     background-color: -[#0A84FF];
+  }
+  .bg-\[141414\] {
+    background-color: 141414;
+  }
+  .bg-\[V\] {
+    background-color: V;
+  }
+  .bg-\[ccv\] {
+    background-color: ccv;
   }
   .bg-amber-50 {
     background-color: var(--color-amber-50);
@@ -1212,6 +1239,26 @@
     }
   }
 }
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -1237,6 +1284,11 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
