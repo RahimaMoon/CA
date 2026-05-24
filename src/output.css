@@ -18,6 +18,8 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
@@ -292,8 +294,20 @@
   .gap-x-10 {
     column-gap: calc(var(--spacing) * 10);
   }
+  .gap-x-15 {
+    column-gap: calc(var(--spacing) * 15);
+  }
   .gap-x-20 {
     column-gap: calc(var(--spacing) * 20);
+  }
+  .gap-x-\[10px\] {
+    column-gap: 10px;
+  }
+  .gap-y-3 {
+    row-gap: calc(var(--spacing) * 3);
+  }
+  .gap-y-5 {
+    row-gap: calc(var(--spacing) * 5);
   }
   .gap-y-6 {
     row-gap: calc(var(--spacing) * 6);
@@ -374,6 +388,27 @@
     border-left-style: var(--tw-border-style);
     border-left-width: 2px;
   }
+  .border-\[\#8585\] {
+    border-color: #8585;
+  }
+  .border-\[\#85857\] {
+    border-color: #85857;
+  }
+  .border-\[\#98989A\] {
+    border-color: #98989A;
+  }
+  .border-\[\#858585\] {
+    border-color: #858585;
+  }
+  .border-\[\#858586\] {
+    border-color: #858586;
+  }
+  .border-\[\#858587\] {
+    border-color: #858587;
+  }
+  .border-\[\#858597\] {
+    border-color: #858597;
+  }
   .border-gray-200 {
     border-color: var(--color-gray-200);
   }
@@ -388,6 +423,9 @@
   }
   .border-purple-600 {
     border-color: var(--color-purple-600);
+  }
+  .border-white {
+    border-color: var(--color-white);
   }
   .bg-\[\#0A84FF\] {
     background-color: #0A84FF;
@@ -425,6 +463,9 @@
   .pt-\[30px\] {
     padding-top: 30px;
   }
+  .pt-\[50px\] {
+    padding-top: 50px;
+  }
   .pb-\[30px\] {
     padding-bottom: 30px;
   }
@@ -450,6 +491,10 @@
   .text-7xl {
     font-size: var(--text-7xl);
     line-height: var(--tw-leading, var(--text-7xl--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
   }
   .text-xl {
     font-size: var(--text-xl);
@@ -486,11 +531,17 @@
   .text-\[\#0A84FF\] {
     color: #0A84FF;
   }
+  .text-\[\#98989A\] {
+    color: #98989A;
+  }
   .text-blue-700 {
     color: var(--color-blue-700);
   }
   .text-gray-500 {
     color: var(--color-gray-500);
+  }
+  .text-gray-600 {
+    color: var(--color-gray-600);
   }
   .text-white {
     color: var(--color-white);
