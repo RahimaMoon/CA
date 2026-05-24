@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="bg-black">
+    <header class="flex gap-[30px] p-[30px] items-center justify-between text-white">
+        <img src="./Logo.png" alt="">
+
+       <nav class="hidden lg:flex gap-15">
+        <a href="./index.html">Home</a>
+        <a href="./services.html">Services</a>
+        <a href="./career.html">Careers</a>
+        <a href="./details.html">Career Details</a>
+        <a href="./contact.html">Contact</a>
+       </nav>
+       <button class="bg-[#0A84FF] p-[15px] rounded-[14px] font-medium hidden lg:flex">Contact Us</button>
+       <i class="flex lg:hidden! fa-solid fa-bars-staggered"></i>
+    </header>
+    <section class="relative flex flex-col gap-y-20 lg:flex-row  p-[20px] items-center">
+        <img class="relative z-10" src="./Frame.png" alt="">
+        <aside class=" absolute z-20 top-[100px] justify-center items-center lg:left-[100px] flex flex-col gap-y-10">
+            <h1 class=" text-white text-4xl lg:text-7xl font-bold leading-relaxed">Transforming Data<br> into  <span class="bg-[#0A84FF] p-[10px] rounded-[15px]">Decisions</span> </h1>
+      <p class="text-white text-xl">Leverage the power of machine learning and AI to unlock insights<br> and drive business growth</p>
+              <button class="bg-[#0A84FF] text-white p-[15px] rounded-[14px] font-medium w-fit ">Book a Meeting</button>
+              <div class="flex gap-5 text-white">
+                <img src="./Group 20.png" alt="">
+                <p class="text-xl">Over<span class="font-medium"> 100+</span> clients have worked with us</p>
+              </div>
+    </aside>
     
+        <img class="lg:absolute lg:right-0 mt-[30px]" src="./robot area.png" alt="">
+ 
+    </section>
+    <div class="flex flex-col gap-y-10 lg:flex-row gap-x-20 justify-center items-center border-b-2 border-purple-600 pb-[30px] border-t-2  pt-[30px] w-fit m-auto">
+        <img src="./Logo (1).png" alt="">
+        <img src="./Logo (2).png" alt="">
+        <img src="./Logo (3).png" alt="">
+        <img src="./Logo (4).png" alt="">
+        <img src="./LOgo (5).png" alt="">
+          <img src="./LOgo (6).png" alt="">
+    </div>
 </body>
 </html>
